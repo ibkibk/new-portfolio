@@ -68,7 +68,7 @@ nav ul li a:hover:after {
   align-items: center;
   justify-content: flex-end;
   justify-content: left;
-  background-color: orangered;
+  background-color: white;
 }
 
 h1 {
@@ -84,7 +84,7 @@ h1 {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: orangered;
+  background-color: white;
   border-bottom: 5px solid black;
 }
 
@@ -163,8 +163,7 @@ h1 {
   display: grid;
   justify-content: space-between;
   flex-wrap: wrap;
-  background-color: orangered;
-  // border-bottom: 2px solid black;
+  background-color: white;
 }
 
 .image {
@@ -229,8 +228,9 @@ h1 {
 
 //Project section
 .project {
-  background-color: orangered;
+  background-color: white;
   height: 100vh;
+  border-bottom: 5px solid black;
   h1 {
     text-align: center;
   }
@@ -239,14 +239,13 @@ h1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 2em;
-  /* justify-content: space-between; */
   align-items: center;
   padding-left: 60px;
   padding-right: 60px;
 }
 .box {
   border: 2px solid black;
-  height: 350px;
+  height: 326px;
   width: 100%;
   img {
     height: 270px;
@@ -257,14 +256,10 @@ h1 {
     text-align: center;
   }
 }
-.box:hover {
-  box-shadow: 10px 10px 50px black;
-  cursor: pointer;
-}
 
 .code {
   text-align: center;
-  margin: 10px;
+  margin: 5px;
 }
 a {
   margin-left: 10px;
@@ -278,5 +273,78 @@ a {
   .wrapper {
     grid-template-columns: 1fr;
     padding: 20px;
+  }
+}
+
+//Skills
+
+.inner {
+  background-color: white;
+  height: 100vh;
+  border-bottom: 5px solid black;
+
+  h1 {
+    text-align: center;
+  }
+}
+
+.containerim {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2em;
+  align-items: center;
+  padding-left: 60px;
+  padding-right: 60px;
+  margin-top: 80px;
+}
+.skill-box {
+  padding: 1rem;
+  color: black;
+  cursor: pointer;
+  p {
+    text-align: center;
+  }
+}
+
+.skill-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  .img {
+    width: 180px;
+    height: 180px;
+    position: relative;
+    border-radius: 45px;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.img:hover {
+  box-shadow: 10px 10px 50px black;
+  cursor: pointer;
+}
+
+.skill-title h3 {
+  color: black;
+  margin: 0.5rem;
+  font-size: 30px;
+}
+.skill-icon {
+  width: 50px;
+}
+@media (max-width: 630px) {
+  .inner {
+    height: 100%;
+  }
+  .containerim {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
   }
 }

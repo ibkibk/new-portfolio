@@ -89,7 +89,7 @@ nav ul li a:hover:after {
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
-  background-color: orangered;
+  background-color: white;
 }
 
 h1 {
@@ -114,7 +114,7 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: orangered;
+  background-color: white;
   border-bottom: 5px solid black;
 }
 
@@ -213,7 +213,7 @@ h1 {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background-color: orangered;
+  background-color: white;
 }
 
 .image {
@@ -295,8 +295,9 @@ h1 {
 }
 
 .project {
-  background-color: orangered;
+  background-color: white;
   height: 100vh;
+  border-bottom: 5px solid black;
 }
 
 .project h1 {
@@ -309,7 +310,6 @@ h1 {
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 2em;
-  /* justify-content: space-between; */
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -319,7 +319,7 @@ h1 {
 
 .box {
   border: 2px solid black;
-  height: 350px;
+  height: 326px;
   width: 100%;
 }
 
@@ -333,15 +333,9 @@ h1 {
   text-align: center;
 }
 
-.box:hover {
-  -webkit-box-shadow: 10px 10px 50px black;
-          box-shadow: 10px 10px 50px black;
-  cursor: pointer;
-}
-
 .code {
   text-align: center;
-  margin: 10px;
+  margin: 5px;
 }
 
 a {
@@ -357,6 +351,105 @@ a {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     padding: 20px;
+  }
+}
+
+.inner {
+  background-color: white;
+  height: 100vh;
+  border-bottom: 5px solid black;
+}
+
+.inner h1 {
+  text-align: center;
+}
+
+.containerim {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 60px;
+  padding-right: 60px;
+  margin-top: 80px;
+}
+
+.skill-box {
+  padding: 1rem;
+  color: black;
+  cursor: pointer;
+}
+
+.skill-box p {
+  text-align: center;
+}
+
+.skill-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.skill-title .img {
+  width: 180px;
+  height: 180px;
+  position: relative;
+  border-radius: 45px;
+  background-color: blueviolet;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.img:hover {
+  -webkit-box-shadow: 10px 10px 50px black;
+          box-shadow: 10px 10px 50px black;
+  cursor: pointer;
+}
+
+.skill-title h3 {
+  color: black;
+  margin: 0.5rem;
+  font-size: 30px;
+}
+
+.skill-icon {
+  width: 50px;
+}
+
+@media (max-width: 630px) {
+  .inner {
+    height: 100%;
+  }
+  .containerim {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+    padding: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */
