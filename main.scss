@@ -297,21 +297,28 @@ a {
     height: 10%;
   }
 }
-@media (max-height: 800px) {
+@media (max-height: 1000px) {
   .project {
     height: 100%;
   }
+  .wrapper {
+    height: 100%;
+    margin-bottom: 5px;
+  }
+  .P {
+    margin-top: 20px;
+  }
 }
 
-.inner {
-  background-color: white;
-  height: 100vh;
-  border-bottom: 5px solid black;
+// .inner {
+//   background-color: white;
+//   height: 100vh;
+//   border-bottom: 5px solid black;
 
-  // h1 {
-  //   text-align: center;
-  // }
-}
+//   // h1 {
+//   //   text-align: center;
+//   // }
+// }
 
 .containerim {
   display: grid;
@@ -382,7 +389,7 @@ a {
     padding: 0;
   }
 }
-@media (max-height: 600px) {
+@media (max-height: 800px) {
   .inner {
     height: 100%;
   }
