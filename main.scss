@@ -101,7 +101,7 @@ nav ul li a {
   margin-top: 300px;
 
   .h {
-    font-size: 40px;
+    font-size: 50px;
     color: white;
     text-align: center;
   }
@@ -215,6 +215,9 @@ nav ul li a {
 }
 
 @media (max-width: 578px) {
+  .about {
+    height: 100%;
+  }
   .next {
     display: flex;
     flex-direction: column;
@@ -247,8 +250,10 @@ nav ul li a {
 .P {
   font-size: 60px;
   text-align: center;
+  height: 10vh;
 }
 .wrapper {
+  height: 90vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 2em;
@@ -284,8 +289,12 @@ a {
     height: 100%;
   }
   .wrapper {
+    height: 90%;
     grid-template-columns: 1fr;
     padding: 20px;
+  }
+  .p {
+    height: 10%;
   }
 }
 @media (max-height: 800px) {

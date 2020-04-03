@@ -135,7 +135,7 @@ nav ul li a {
 }
 
 .header .h {
-  font-size: 40px;
+  font-size: 50px;
   color: white;
   text-align: center;
 }
@@ -287,6 +287,9 @@ nav ul li a {
 }
 
 @media (max-width: 578px) {
+  .about {
+    height: 100%;
+  }
   .next {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -323,9 +326,11 @@ nav ul li a {
 .P {
   font-size: 60px;
   text-align: center;
+  height: 10vh;
 }
 
 .wrapper {
+  height: 90vh;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
@@ -369,9 +374,13 @@ a {
     height: 100%;
   }
   .wrapper {
+    height: 90%;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     padding: 20px;
+  }
+  .p {
+    height: 10%;
   }
 }
 
