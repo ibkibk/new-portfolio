@@ -141,13 +141,6 @@ nav ul li a {
   justify-content: left;
 }
 
-// h1 {
-//   font-family: "Raleway";
-//   text-align: center;
-//   color: white;
-//   font-size: 40px;
-// }
-
 .about {
   height: 100vh;
   display: grid;
@@ -159,7 +152,6 @@ nav ul li a {
   font-size: 60px;
   text-align: center;
   font-weight: bold;
-  // font-family: "Raleway";
 }
 
 .image {
@@ -206,8 +198,6 @@ nav ul li a {
   width: 50%;
   align-items: center;
   padding: 30px;
-  // border-top: 5px solid black;
-  // border-bottom: 5px solid black;
 
   p {
     font-size: 20px;
@@ -244,11 +234,8 @@ nav ul li a {
 .project {
   background-color: white;
   height: 100vh;
-  // border-bottom: 5px solid black;
-  // h1 {
-  //   text-align: center;
-  // }
 }
+
 .P {
   font-size: 60px;
   text-align: center;
@@ -317,16 +304,6 @@ p {
   }
 }
 
-// .inner {
-//   background-color: white;
-//   height: 100vh;
-//   border-bottom: 5px solid black;
-
-//   // h1 {
-//   //   text-align: center;
-//   // }
-// }
-
 .containerim {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -389,7 +366,6 @@ p {
   .inner {
     height: 100%;
     width: 100%;
-    // margin-top: 200px;
   }
   .containerim {
     display: flex;
