@@ -156,7 +156,7 @@ nav ul li a {
   background-color: white;
 }
 .A {
-  font-size: 80px;
+  font-size: 60px;
   text-align: center;
 }
 
@@ -204,8 +204,8 @@ nav ul li a {
   width: 50%;
   align-items: center;
   padding: 30px;
-  border-top: 5px solid black;
-  border-bottom: 5px solid black;
+  // border-top: 5px solid black;
+  // border-bottom: 5px solid black;
 
   p {
     font-size: 20px;
@@ -284,7 +284,7 @@ a {
   margin-right: 10px;
 }
 
-@media (max-width: 630px) {
+@media (max-width: 720px) {
   .project {
     height: 100%;
   }

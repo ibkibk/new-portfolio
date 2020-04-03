@@ -202,7 +202,7 @@ nav ul li a {
 }
 
 .A {
-  font-size: 80px;
+  font-size: 60px;
   text-align: center;
 }
 
@@ -276,8 +276,6 @@ nav ul li a {
       -ms-flex-align: center;
           align-items: center;
   padding: 30px;
-  border-top: 5px solid black;
-  border-bottom: 5px solid black;
 }
 
 .textbox p {
@@ -369,7 +367,7 @@ a {
   margin-right: 10px;
 }
 
-@media (max-width: 630px) {
+@media (max-width: 720px) {
   .project {
     height: 100%;
   }
