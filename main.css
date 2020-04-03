@@ -204,6 +204,7 @@ nav ul li a {
 .A {
   font-size: 60px;
   text-align: center;
+  font-weight: bold;
 }
 
 .image {
@@ -244,7 +245,6 @@ nav ul li a {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: white;
-  border-bottom: 5px solid black;
 }
 
 .social-media {
@@ -318,7 +318,6 @@ nav ul li a {
 .project {
   background-color: white;
   height: 100vh;
-  border-bottom: 5px solid black;
 }
 
 .P {
@@ -367,6 +366,10 @@ a {
   margin-right: 10px;
 }
 
+p {
+  font-weight: bold;
+}
+
 @media (max-width: 720px) {
   .project {
     height: 100%;
@@ -392,6 +395,8 @@ a {
   }
   .P {
     margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
   }
 }
 
@@ -410,8 +415,10 @@ a {
 }
 
 .S {
-  font-size: 80px;
+  font-size: 60px;
+  margin-top: 80px;
   text-align: center;
+  font-weight: bold;
 }
 
 .skill-box {
