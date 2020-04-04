@@ -229,41 +229,106 @@ nav ul li a {
           align-items: center;
 }
 
-.section-follow {
+.wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 25vh;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-color: white;
+  height: 100%;
+  background-image: white;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
 }
 
-.social-media {
-  font-size: 60px;
+.wrapper__links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.social-media i {
-  color: black;
+.social-link--linkedin {
+  color: #2d76b0;
 }
 
-.section-follow {
-  height: 20vh;
-  width: auto;
+.social-link--github {
+  color: #000;
+}
+
+.social-link--instagram {
+  color: #9a2970;
+}
+
+.social-link--dribbble {
+  color: #b53561;
+}
+
+.social-link .social-svg {
+  width: 4rem;
+  height: 4rem;
+}
+
+.social-link .social-svg .social-group__icon {
+  fill: #191308;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.social-link .social-svg .social-group__inner-circle {
+  fill: transparent;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.social-link .social-svg .social-group__outline {
+  stroke: #191308;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.social-link .social-svg:hover .social-group__icon, .social-link .social-svg:active .social-group__icon, .social-link .social-svg:focus .social-group__icon {
+  fill: #fffbfa;
+  -webkit-transition: all 0.45s;
+  transition: all 0.45s;
+}
+
+.social-link .social-svg:hover .social-group__inner-circle, .social-link .social-svg:active .social-group__inner-circle, .social-link .social-svg:focus .social-group__inner-circle {
+  fill: currentColor;
+  -webkit-transition: all 0.45s;
+  transition: all 0.45s;
+}
+
+.social-link .social-svg:hover .social-group__inner-circle--instagram, .social-link .social-svg:active .social-group__inner-circle--instagram, .social-link .social-svg:focus .social-group__inner-circle--instagram {
+  fill: url(#simpleInsta) !important;
+}
+
+.social-link .social-svg:hover .social-group__outline, .social-link .social-svg:active .social-group__outline, .social-link .social-svg:focus .social-group__outline {
+  stroke: currentColor;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.45s;
+  transition: all 0.45s;
+}
+
+.get {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+@media all and (max-width: 400px) {
+  .wrapper__links {
+    margin-top: 30px;
+  }
 }
 
 .section-follow .social-media ul li a {
@@ -326,7 +391,7 @@ nav ul li a {
   height: 10vh;
 }
 
-.wrapper {
+.wrappers {
   height: 90vh;
   display: -ms-grid;
   display: grid;
@@ -374,7 +439,7 @@ p {
   .project {
     height: 100%;
   }
-  .wrapper {
+  .wrappers {
     height: 90%;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -389,7 +454,7 @@ p {
   .project {
     height: 100%;
   }
-  .wrapper {
+  .wrappers {
     height: 100%;
     margin-bottom: 5px;
   }
